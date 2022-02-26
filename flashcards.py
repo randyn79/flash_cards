@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import csv
 import random
 import sys
@@ -35,7 +37,7 @@ def flash_cards(dict1, choice):
         else:
             print('Incorrect :(')
             print(f'The correct answer was {question[1]}.')
-           
+
             incorrect +=1
         print(f'CURRENT SCORE')
         print(f'Correct: {correct}')
@@ -53,7 +55,7 @@ def flash_cards(dict1, choice):
             continue
 
 if __name__ == "__main__":
-    
+
 
     print('-' * 50)
     print(f'FLASHCARDS')
@@ -68,10 +70,10 @@ if __name__ == "__main__":
     print()
     deck = input('Enter the filename for the deck you would like to use:  ')
     #file_description = file_descriptions(deck)
-    
+
     question, answer, dict1 = load_dictionary(deck)
-    
-    
+
+
     while True:
         print('-' * 50)
         print(f'FLASHCARDS: {question} / {answer}')
